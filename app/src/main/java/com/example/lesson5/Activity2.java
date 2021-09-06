@@ -52,12 +52,12 @@ public class Activity2 extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "OBJECT " + (position + 1);
+            return "TEN TRANG " + (position + 1);
         }
     }
 
