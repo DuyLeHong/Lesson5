@@ -2,6 +2,7 @@ package com.example.lesson5;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,51 @@ public class SimpleFragment extends Fragment {
         return view;
     }
 
+    public void setupInfo() {
+        Log.d("AAA", "setup info");
+    }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        MainActivity ac = (MainActivity) getActivity();
+
+        ac.doSomeThing();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // viet code o day
+
+        //
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        // viet code o day
+
+        //
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
 
 
 }

@@ -2,7 +2,9 @@ package com.example.lesson5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,5 +26,42 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Activity's Button", Toast.LENGTH_LONG).show();
             }
         });
+
+        FragmentManager fmr = getFragmentManager();
+
+        SimpleFragment simpleFm = (SimpleFragment) fmr.findFragmentById(R.id.fragments);
+        simpleFm.setupInfo();
+
     }
+
+    public void doSomeThing() {
+        Log.d("AAA", "do something");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        //viet code o day
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //viet code o day
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+
 }
