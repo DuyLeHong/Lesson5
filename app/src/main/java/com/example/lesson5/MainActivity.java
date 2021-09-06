@@ -3,6 +3,7 @@ package com.example.lesson5;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // display a message by using a Toast
                 Toast.makeText(getApplicationContext(), "Activity's Button", Toast.LENGTH_LONG).show();
+                
+                startActivity(new Intent(getApplicationContext(), Activity2.class));
             }
         });
 
