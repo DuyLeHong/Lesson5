@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class Activity2 extends AppCompatActivity {
+public class Activity2 extends AppCompatActivity { //5/11/2021
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
